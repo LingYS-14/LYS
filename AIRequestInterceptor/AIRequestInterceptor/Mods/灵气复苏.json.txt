@@ -1,0 +1,47 @@
+{
+  "id": "spiritual_revival",
+  "name": "⚡ 灵气复苏",
+  "author": "穿越者玩家",
+  "version": "1.0",
+  "description": "天地异变，灵气涌入大明，开启修仙时代。崇祯皇帝作为穿越者，率先察觉到了地脉的异动，并掌握了修仙功法。",
+  "priority": 100,
+  "applyTo": ["chat", "deduction", "task"],
+  "injections": [
+    {
+      "type": "SystemPromptOverride",
+      "action": "Append",
+      "content": "\n5.【世界异变：灵气复苏】天地间灵气浓度急剧上升，凡人可通过修炼汲取灵气。存在炼气、筑基、金丹等境界。皇帝作为穿越者，已秘密掌握《混元帝王诀》。"
+    },
+    {
+      "type": "Database",
+      "category": "装备",
+      "action": "Add",
+      "position": "end",
+      "content": "  \"聚灵阵盘\",5,1,\"蕴含灵气的阵盘，可加速修炼，需放置在灵脉之上。\""
+    },
+    {
+      "type": "Database",
+      "category": "阶层",
+      "action": "Add",
+      "position": "end",
+      "content": "  \"修士\",80,40,10"
+    },
+    {
+      "type": "Parameter",
+      "key": "temperature",
+      "action": "Set",
+      "value": 1.1
+    },
+    {
+      "type": "NpcPersona",
+      "match": "薛贞",
+      "action": "Append",
+      "content": "\n你暗中修炼了魔道功法“血煞诀”，通过折磨囚犯吸收他们的怨气和血肉来提升修为，目前处于炼气三层。"
+    },
+    {
+      "type": "DeductionContext",
+      "action": "Append",
+      "content": "\n【灵气异变影响】本回合灵气浓度上升，可能导致民间出现修仙热，部分军队可能因追求修仙而士气波动。请在推演和生成 tool_calls 时考虑灵气复苏对民心和军队忠诚度的影响。"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37411.7 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRequestInterceptor", "AIRequestInterceptor\AIRequestInterceptor.csproj", "{1723D13B-1495-4355-B64E-0DA68FF13C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1723D13B-1495-4355-B64E-0DA68FF13C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1723D13B-1495-4355-B64E-0DA68FF13C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1723D13B-1495-4355-B64E-0DA68FF13C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1723D13B-1495-4355-B64E-0DA68FF13C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77D647D9-4EEF-45BB-8EF7-273F0265C018}
+	EndGlobalSection
+EndGlobal
